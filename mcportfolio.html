@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #230d4d;
+            color: #4b1796;
+            transition: background 1.5s ease;
+            text-align: center;
+        }
+        header {
+            background: #222;
+            color: #007BFF;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .enter-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: #007BFF;
+        }
+        .enter-button {
+            background: #007BFF;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .enter-button:hover {
+            background: #0056b3;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: block;
+            border: 5px solid #555;
+        }
+        img{
+            border-radius: 100%;
+            size: 200px;
+        }
+        .section {
+            background: #050408;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+        }
+        .section h2 {
+            border-bottom: 2px solid #555;
+            padding-bottom: 10px;
+            color: #007BFF;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #110226;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            background: #007BFF;
+            color: black;
+            border: none;
+            padding: 5px 5px;
+            font-size: 10px;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: background 2.3s;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+       .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .skill {
+            background: #110226;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        
+        }
+         
+        /* Gallery Section */
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #800080;
+         }   
+    </style>
+    <script>
+        function enterPortfolio() {
+            document.body.style.backgroundColor = '#001f3f';
+            document.getElementById('portfolio-section').style.display = 'block';
+            document.getElementById('enter-section').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        My Personal Portfolio
+    </header>
+    <div class="container">
+           <img src="https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/402126265_889775856045882_7158621530166608580_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHLdk-H4DNupd0PZq9trcLnumqQ8bKiZPO6apDxsqJk886rvvAEl5EJrGDacp8APBBUIMGQtsTWO4igpDkEzK3J&_nc_ohc=DO_wFy1jKGkQ7kNvgGeRTjT&_nc_oc=AdidNW9Uk6bUoHqhJJivdiWtDXsY_oI55sQQO_hD83pSOrGSTDCxCqxiBQAxe0lfoGMmirdfCEIqBgjLVlYivRA8&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&_nc_gid=AYLclX1_ln74iQEIyu4cK3p&oh=00_AYDDNIbiosuf_E_VK3RXxwfju2Yj9_sq6tdKsdALYn5R0w&oe=67C4838F" height="300px" width="300px">
+        <div id="enter-section" class="enter-section">
+
+            <button class="enter-button" onclick="enterPortfolio()">View Profile</button>
+        </div>
+        <div id="portfolio-section" style="display: none;">
+            <div class="section about-me">
+                <div>
+              <h2>About Me</h2> 
+                    <p>Hello! I'm <strong>Mark Niel Valera,</strong> 2nd year college studying in <strong>Bachelor of Science in Information Technology</strong> in <strong>FULLBRIGHT COLLEGE,</strong> expertise in Everything. Welcome to my personal portfolio.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>INFORMATION</h2>
+                <p><strong>Address: Purok Sandiwa Brgy.Tiniguiban, PPC, Palawan</p>
+                <p><strong>Birth date: October 16, 2002</p>
+                 <p><strong>Gender: Male</p>
+                <p><strong>Age: 22 years old</p>
+                 <p><strong>Religion: Catholic</p>
+                <p><strong>Status: Single</p>
+                </div>
+                <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery img {
+            width: 150px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(2.5);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .modal-content {
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px white;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div id="gallery-section" style="display: viewport;">
+            <div class="section image-gallery">
+                <h2>GALLERY</h2>
+        <img src="https://scontent.fmnl34-1.fna.fbcdn.net/v/t39.30808-6/480595664_1177690653921066_1625971881169045471_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFiD87ZcZuenJHjRf4NvX4yH6ZUvIZLCUAfplS8hksJQKgNEcV121kOYbyLCo7Mb0wDycqgBEKZTQ5sycnVuKtR&_nc_ohc=mwwlb6dtMX8Q7kNvgHTqXep&_nc_oc=AdjFh74wcLmC8391qwRCDdp8z-Kz9Bb-n2lZ9gjB7MkzNYei40g2tko0ltcruQZzrEzPy49ZA5Y-fVzODv0dAt9W&_nc_zt=23&_nc_ht=scontent.fmnl34-1.fna&_nc_gid=ANt7QNLHjdVOVMqRZ5nyW9m&oh=00_AYBrDphHR312Yl1_UqqZwPWJey9UXBznnmtPrv4KwUT0jA&oe=67C474E9" onclick="openModal(this)">
+        <img src="https://scontent.fmnl33-1.fna.fbcdn.net/v/t39.30808-6/480499397_1178229547200510_4537863714087251682_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHi9SmXBtcTKK0OjH6IY2tHWXPlYaWAh41Zc-VhpYCHjUuilpSX45AWtenCTGi8XdSNMn4oZyK5Cnl0oUMfV3Eg&_nc_ohc=ml4oY7A4G7wQ7kNvgEcu8ms&_nc_oc=AdiX4w773UNAQ2LV2FROvQbqKMkrNRUPOQcswu2rcQQ9w7ao03V2J6OsXW1fJHIRaik&_nc_zt=23&_nc_ht=scontent.fmnl33-1.fna&_nc_gid=AII1RAZS_zHmS_gvu1g4RTx&oh=00_AYDx3q3JyEHpBlR2TbiUNJqBkA0jBEpUzcAiVxQ5nqI7uw&oe=67C4804D" onclick="openModal(this)">
+        <img src="https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/470212856_1134717021551763_7731438203228078418_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGWltYstIGEz_WzKSqYmsiwDWg3BbJ7vBoNaDcFsnu8GqRBrtH8N5JVXxUT7NtGM8eszWQwHsr1JO--EkqJYZ2W&_nc_ohc=XbMod6jWgvAQ7kNvgEXbk25&_nc_oc=Adha5CfU9c8WRg2GA4SPgLYrSuALVSuAbzqQrT-U7bYY7kCBGYClyLXnKqjlmJRVSOQ&_nc_zt=23&_nc_ht=scontent.fmnl33-2.fna&_nc_gid=AuZ0o2DlsqZtaXBe9FWoTIF&oh=00_AYDHZ8bRuSoZUOFZPtJgNBAEY3tBVsTomV79ifw5RjB1Uw&oe=67C4650C" onclick="openModal(this)">
+        <img src="https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/470145779_1134421248248007_2592954565478013164_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGimxOp0e-PKkewYU1KEtX_oxNnz5XdNTCjE2fPld01MMx9QjQyTGKN8Hu-VfGlx4C508LQ6LitZ8LM9MeS5fZ9&_nc_ohc=rCdmQ-Oc4csQ7kNvgGjjyOS&_nc_oc=Adj45y0EOiJbFuuho31g90pRcRNyJbrJjnnUOqSLr8v3_OW494DnB_BAc5BLjLrb4zQ&_nc_zt=23&_nc_ht=scontent.fmnl33-2.fna&_nc_gid=AfcywjX_ac_0UaGJ1Rc4CtK&oh=00_AYB2NfwN-DQRkqs4-nFacwXzSSp7XJt1qNcdjtMCCTIRXQ&oe=67C48138" onclick="openModal(this)">
+    </div>
+
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(imgElement) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        
+        }
+    </script>
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">Visual Basic</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">SQL</div>
+                </div>
+                </div>
+                <div class="section">
+                <h2>EDUCATIONAL BACKROUND(PRIMARY)</h2>
+                <p><strong>Tiniguiban,Elementary School</strong></p>
+                <p><strong>YEAR: 2007-2013</strong></p>
+            </div>  
+            <div class="section">
+                <h2>EDUCATIONAL BACKROUND(SECONDARY)</h2>
+                <p><strong>Sta.Monica High School</strong></p>
+                <p><strong>YEAR: 2014-2019</strong></p>
+            </div>
+            </div>  
+            <div class="section">
+                <h2>MY WORK EXPERIENCES</h2>
+                <p><strong>Waiter</strong></p>
+                <p><strong>Construction Labor</strong></p>
+                <p><strong>Encoder</strong></p>
+                <p><strong>Welder</strong>
+                
+            </div>  
+            </div>
+            <div class="section">
+                <h2>My Projects</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <p>none</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>none</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>none</p>
+                    </div>
+                </div>
+                </div>                   
+                </h2>
+            <div class="section">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> marknielvalera6@gmail.com</p>
+                <p><strong>Contact Number:</strong> 09305628778</p>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/photo/?fbid=889775859379215&set=a.102079541482188" style="text-decoration:none;"> markniel.valera.37</a>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; HI! it's me mac</p>
+    </footer>
+</body>
+</html>
